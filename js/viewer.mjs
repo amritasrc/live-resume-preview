@@ -16,7 +16,7 @@ const { getDocument, GlobalWorkerOptions } = pdfjsLib;
 GlobalWorkerOptions.workerSrc =
   "https://cdn.jsdelivr.net/npm/pdfjs-dist@6.0.227/build/pdf.worker.min.mjs";
 
-const PDF_URL = "/files/ankit-resume.pdf";
+const PDF_URL = "/files/amrita-resume.pdf";
 
 // Theme: tri-state choice (system | light | dark). The initial state is set
 // before paint by an inline script in index.html; here we cycle + persist it,
