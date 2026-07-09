@@ -1,169 +1,105 @@
-%-------------------------
-% Resume in Latex
-% Author : Amrita Kumari
-% License : MIT
-%-------------------------
+\documentclass[11pt,a4paper,sans]{moderncv}
 
-\documentclass[a4paper,11pt]{article}
-\setlength{\footskip}{4.08003pt}
+% Style
+\moderncvstyle{banking}
+\moderncvcolor{blue}
 
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\input{glyphtounicode}
+% Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
 
-\usepackage{charter}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1.2in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-\pdfgentounicode=1
-
-%-------------------------
-% Custom Commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    #1 \vspace{-2pt}
-  }
-}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, topsep=0pt, partopsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+% Personal Data
+\name{Amrita}{Kumari}
+\title{Frontend Web Developer}
+\phone[mobile]{+91 8877130191}
+\email{dev.amritasrc@gmail.com}
+\social[linkedin]{linkedin_username}
+\social[github]{github_username}
+\homepage{yourwebsite.com}
 
 \begin{document}
 
-%----------HEADING----------
+\makecvtitle
 
-\begin{center}
-    \textbf{\Huge \scshape Amrita Kumari} \\ \vspace{2pt}
-    \small
-    \href{tel:+919102281008}{\underline{+91 9102281008}} $|$
-    \href{mailto:ankitbhagat.dev@gmail.com}{\underline{ankitbhagat.dev@gmail.com}} $|$
-    \href{https://linkedin.com/in/your-linkedin}{\underline{LinkedIn}} $|$
-    \href{https://github.com/ankitsensei}{\underline{GitHub}} $|$
-    \href{https://ankitbhagat-portfolio.vercel.app}{\underline{Portfolio}}
-\end{center}
-
-%-----------SUMMARY-----------
-
+%------------------------------------
 \section{Professional Summary}
 
-Full Stack Web Developer specializing in building scalable web applications using React, Node.js, Express.js, and MongoDB. Experienced in developing responsive user interfaces, REST APIs, and deploying production-ready applications. Passionate about modern JavaScript technologies and writing clean, maintainable code.
+Frontend-focused web developer with experience building dynamic applications using JavaScript, React, HTML, and CSS. Skilled in API integration, DOM manipulation, and developing practical solutions such as browser extensions. Passionate about modern web development and creating clean, user-friendly interfaces.
 
-%-----------EXPERIENCE-----------
-
-\section{Experience}
-
-\begin{itemize}[leftmargin=0.15in,label={}]
-\small{
-
-\item{
-\textbf{Web Developer (Freelance)} $|$ \emph{React, Tailwind CSS, Supabase} \hfill \emph{2025}\\
-ClassyPictures \hfill Hybrid, Chakradharpur
-
-\resumeItemListStart
-\resumeItem{Developed a modern photography portfolio website using React.js, Tailwind CSS, and Supabase.}
-\resumeItem{Implemented online booking functionality and GSAP animations, reducing manual communication and improving user engagement.}
-\resumeItemListEnd
-}
-
-\item{
-\textbf{Frontend Developer (Contract)} $|$ \emph{React, Tailwind CSS, GSAP} \hfill \emph{2024}\\
-Hack United \hfill Remote
-
-\resumeItemListStart
-\resumeItem{Built a responsive hackathon website using React.js and Tailwind CSS.}
-\resumeItem{Created reusable UI components and smooth animations, improving development speed and page performance.}
-\resumeItemListEnd
-}
-
-}
-\end{itemize}
-
-%-----------PROJECTS-----------
-
-\section{Projects}
-
-\begin{itemize}[leftmargin=0.15in,label={}]
-\small{
-
-\item{
-\textbf{The North Face} $|$ \emph{React, Node.js, Express, MongoDB, Tailwind CSS}
-\hfill
-\underline{\href{https://github.com/ankitsensei}{GitHub}}
-
-\resumeItemListStart
-\resumeItem{Built a full-stack MERN e-commerce platform featuring JWT authentication, shopping cart, and product management.}
-\resumeItem{Integrated Stripe payments, Cash on Delivery, order tracking, and an admin dashboard.}
-\resumeItemListEnd
-}
-
-\item{
-\textbf{Rhythm} $|$ \emph{React, TypeScript, Tailwind CSS}
-
-\resumeItemListStart
-\resumeItem{Developed a Spotify-inspired music player using the YouTube Data API.}
-\resumeItem{Implemented song search, playback controls, keyboard shortcuts, responsive design, and modern UI.}
-\resumeItemListEnd
-}
-
-}
-\end{itemize}
-
-%-----------SKILLS-----------
-
-\section{Technical Skills}
-
-\begin{itemize}[leftmargin=0.15in,label={}]
-\small{
-\item{
-\textbf{Languages}{: JavaScript, TypeScript, Python, C, C++, Rust} \\
-
-\textbf{Frontend}{: React.js, Tailwind CSS, HTML5, CSS3} \\
-
-\textbf{Backend}{: Node.js, Express.js} \\
-
-\textbf{Databases}{: MongoDB, MySQL, Supabase, Firebase} \\
-
-\textbf{Tools}{: Git, GitHub, Postman, Linux}
-}
-}
-\end{itemize}
-
-%-----------EDUCATION-----------
-
+%------------------------------------
 \section{Education}
 
-\begin{itemize}[leftmargin=0.15in,label={}]
-\small{
+\cventry{Sep 2024 -- Sep 2028}
+{B.Tech in Computer Science and Engineering}
+{Jharkhand Rai University}
+{Ranchi}
+{CGPA: 9.09}
+{}
 
-\item{
-\textbf{Jharkhand Rai University} \hfill Ranchi, Jharkhand\\
-Bachelor of Technology in Computer Science and Engineering
-\hfill
-\emph{2024 -- 2028}\\
-CGPA: 8.5
-}
+%------------------------------------
+\section{Projects}
 
-}
+\cventry{Jun 2026}
+{Rhythmify}
+{Individual Project}
+{}
+{}
+{
+\begin{itemize}
+\item Developed a React-based music player integrating the YouTube Data API to search and stream songs.
+\item Built custom media controls including play/pause, seek, keyboard shortcuts, and real-time progress tracking.
+\item Responsive UI optimized for desktop, tablet, and mobile.
+\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript.
 \end{itemize}
+}
+
+\cventry{May 2026}
+{YouTube Study Mode (Chrome Extension)}
+{Individual Project}
+{}
+{}
+{
+\begin{itemize}
+\item Built a Chrome extension that blocks distracting YouTube elements using DOM manipulation and CSS.
+\item Used content scripts to dynamically modify pages and maintain focus mode.
+\item \textbf{Tech Stack:} JavaScript, HTML, CSS, Chrome Extensions API.
+\end{itemize}
+}
+
+\cventry{May 2026}
+{Expense Tracker}
+{Individual Project}
+{}
+{}
+{
+\begin{itemize}
+\item Built a responsive expense tracker using React, Tailwind CSS, and Framer Motion.
+\item Implemented dynamic state management with real-time balance updates.
+\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript, Framer Motion.
+\end{itemize}
+}
+
+\cventry{Mar 2026}
+{AniVerse}
+{Individual Project}
+{}
+{}
+{
+\begin{itemize}
+\item Built a web application that fetches anime data from an external API.
+\item Designed a responsive interface for desktop, tablet, and mobile devices.
+\item \textbf{Tech Stack:} JavaScript, HTML, CSS.
+\end{itemize}
+}
+
+%------------------------------------
+\section{Skills}
+
+\cvitem{Programming}{C, C++, Java, Python, JavaScript}
+\cvitem{Frontend}{React, HTML, CSS, Tailwind CSS, Framer Motion}
+\cvitem{Database}{Supabase}
+\cvitem{Tools}{Git, GitHub}
+\cvitem{Languages}{English, Hindi}
+\cvitem{Soft Skills}{Communication, Leadership, Critical Thinking, Decision Making, Problem Solving}
 
 \end{document}
