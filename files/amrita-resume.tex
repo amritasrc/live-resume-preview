@@ -1,105 +1,105 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper]{article}
 
-% Style
-\moderncvstyle{banking}
-\moderncvcolor{blue}
+\usepackage[a4paper,margin=0.7in]{geometry}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{array}
 
-% Encoding
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.85]{geometry}
+\pagenumbering{gobble}
 
-% Personal Data
-\name{Amrita}{Kumari}
-\title{Frontend Web Developer}
-\phone[mobile]{+91 8877130191}
-\email{dev.amritasrc@gmail.com}
-\social[linkedin]{linkedin_username}
-\social[github]{github_username}
-\homepage{yourwebsite.com}
+\titleformat{\section}
+{\large\bfseries}
+{}{0em}{}[\titlerule]
 
 \begin{document}
 
-\makecvtitle
+\begin{center}
+    {\LARGE \textbf{Amrita Kumari}}\\[4pt]
+    \textbf{Frontend Web Developer}\\[6pt]
 
-%------------------------------------
-\section{Professional Summary}
+    \href{mailto:dev.amritasrc@gmail.com}{dev.amritasrc@gmail.com} \quad | \quad
+    \href{https://linkedin.com/in/yourusername}{LinkedIn} \quad | \quad
+    \href{https://github.com/amritasrc}{GitHub} \quad | \quad
+    \href{https://yourportfolio.com}{Portfolio}\\
+    Ranchi, India
+\end{center}
+
+%----------------------------------------
+
+\section*{Professional Summary}
 
 Frontend-focused web developer with experience building dynamic applications using JavaScript, React, HTML, and CSS. Skilled in API integration, DOM manipulation, and developing practical solutions such as browser extensions. Passionate about modern web development and creating clean, user-friendly interfaces.
 
-%------------------------------------
-\section{Education}
+%----------------------------------------
 
-\cventry{Sep 2024 -- Sep 2028}
-{B.Tech in Computer Science and Engineering}
-{Jharkhand Rai University}
-{Ranchi}
-{CGPA: 9.09}
-{}
+\section*{Education}
 
-%------------------------------------
-\section{Projects}
+\textbf{Jharkhand Rai University}, Ranchi\\
+Bachelor of Technology in Computer Science and Engineering\\
+Sep 2024 -- Sep 2028 \hfill \textbf{CGPA: 9.09}
 
-\cventry{Jun 2026}
-{Rhythmify}
-{Individual Project}
-{}
-{}
-{
-\begin{itemize}
+%----------------------------------------
+
+\section*{Projects}
+
+\textbf{CopyIt} \hfill Jul 2026
+
+\begin{itemize}[leftmargin=*]
+\item Developed a Code Snippet Vault using React.js, Tailwind CSS, and Monaco Editor, enabling users to create, edit, organize, and manage reusable code snippets.
+\item Integrated Monaco Editor with CRUD operations, syntax highlighting, language selection, keyword search, and responsive UI.
+\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{Rhythmify} \hfill Jun 2026
+
+\begin{itemize}[leftmargin=*]
 \item Developed a React-based music player integrating the YouTube Data API to search and stream songs.
-\item Built custom media controls including play/pause, seek, keyboard shortcuts, and real-time progress tracking.
-\item Responsive UI optimized for desktop, tablet, and mobile.
-\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript.
+\item Built custom media controls with play/pause, seek, keyboard shortcuts, and responsive playback.
+\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript
 \end{itemize}
-}
 
-\cventry{May 2026}
-{YouTube Study Mode (Chrome Extension)}
-{Individual Project}
-{}
-{}
-{
-\begin{itemize}
+\vspace{4pt}
+
+\textbf{GitProfile} \hfill Jun 2026
+
+\begin{itemize}[leftmargin=*]
+\item Built a GitHub Profile Search application using React.js, Tailwind CSS, and the GitHub REST API.
+\item Displayed real-time GitHub profile and repository information with optimized API requests and responsive UI.
+\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript, GitHub API
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{YouTube Study Mode (Chrome Extension)} \hfill May 2026
+
+\begin{itemize}[leftmargin=*]
 \item Built a Chrome extension that blocks distracting YouTube elements using DOM manipulation and CSS.
-\item Used content scripts to dynamically modify pages and maintain focus mode.
-\item \textbf{Tech Stack:} JavaScript, HTML, CSS, Chrome Extensions API.
+\item Used content scripts to maintain focus mode across navigation.
+\item \textbf{Tech Stack:} JavaScript, HTML, CSS, Chrome Extensions API
 \end{itemize}
-}
 
-\cventry{May 2026}
-{Expense Tracker}
-{Individual Project}
-{}
-{}
-{
-\begin{itemize}
-\item Built a responsive expense tracker using React, Tailwind CSS, and Framer Motion.
-\item Implemented dynamic state management with real-time balance updates.
-\item \textbf{Tech Stack:} React, Tailwind CSS, JavaScript, Framer Motion.
-\end{itemize}
-}
+%----------------------------------------
 
-\cventry{Mar 2026}
-{AniVerse}
-{Individual Project}
-{}
-{}
-{
-\begin{itemize}
-\item Built a web application that fetches anime data from an external API.
-\item Designed a responsive interface for desktop, tablet, and mobile devices.
-\item \textbf{Tech Stack:} JavaScript, HTML, CSS.
-\end{itemize}
-}
+\section*{Skills}
 
-%------------------------------------
-\section{Skills}
+\begin{tabular}{>{\bfseries}p{4cm}p{11cm}}
 
-\cvitem{Programming}{C, C++, Java, Python, JavaScript}
-\cvitem{Frontend}{React, HTML, CSS, Tailwind CSS, Framer Motion}
-\cvitem{Database}{Supabase}
-\cvitem{Tools}{Git, GitHub}
-\cvitem{Languages}{English, Hindi}
-\cvitem{Soft Skills}{Communication, Leadership, Critical Thinking, Decision Making, Problem Solving}
+Programming Languages & C, C++, Java, Python, JavaScript \\
+
+Frontend & React.js, HTML5, CSS3, Tailwind CSS, Framer Motion \\
+
+Database & Supabase \\
+
+Tools & Git, GitHub, Monaco Editor \\
+
+Languages & English, Hindi \\
+
+Soft Skills & Communication, Leadership, Critical Thinking, Decision Making, Problem Solving \\
+
+\end{tabular}
 
 \end{document}
